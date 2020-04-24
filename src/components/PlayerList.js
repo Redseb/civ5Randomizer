@@ -42,7 +42,7 @@ const PlayerList = ({ activeCivs }) => {
   }
   return (
     <div style={styles.container}>
-      <h1 style={styles.header}>Player List</h1>
+      <h1 style={styles.header}>Players</h1>
       {content}
       <div
         style={styles.button}
@@ -52,7 +52,7 @@ const PlayerList = ({ activeCivs }) => {
             ...players,
             {
               name: "",
-              civ: activeCivs[players.length],
+              civ: activeCivs[players.length % activeCivs.length],
               index:
                 players.length === 0
                   ? 0
@@ -92,6 +92,10 @@ const styles = {
   },
   header: {
     textAlign: "center",
+    textDecoration: "underline",
+    textDecorationLine: "solid",
+    textDecorationColor: "yellow",
+    paddingBottom: "35px",
   },
   button: {
     borderRadius: "10px",

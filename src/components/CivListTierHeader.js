@@ -18,7 +18,11 @@ const CivListTierHeader = ({ tier, activeCivs, setActiveCivs }) => {
     setIsEnabling(!isEnabling);
   };
   return (
-    <div style={styles.header} onClick={toggleAllTier}>
+    <div
+      style={!isEnabling ? styles.header : styles.headerDisabled}
+      onClick={toggleAllTier}
+      className={"button"}
+    >
       <h1>Tier {tier}</h1>
     </div>
   );
@@ -27,6 +31,13 @@ const CivListTierHeader = ({ tier, activeCivs, setActiveCivs }) => {
 const styles = {
   header: {
     textAlign: "center",
+    fontSize: "75%",
+  },
+  headerDisabled: {
+    textAlign: "center",
+    opacity: "0.4",
+    filter: "grayscale(100%)",
+    fontSize: "75%",
   },
 };
 

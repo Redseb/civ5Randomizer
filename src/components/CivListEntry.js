@@ -42,10 +42,7 @@ const CivListEntry = ({
       <div style={styles.subcontainer}>
         <h2 style={styles.header}>{civ}</h2>
       </div>
-      <p style={styles.subText}>
-        {bias}
-        {tier}
-      </p>
+      <p style={styles.subText}>{bias}</p>
     </div>
   );
 };
@@ -62,6 +59,7 @@ const styles = {
     borderStyle: "solid",
     borderRadius: "10px",
     margin: "10px",
+    minHeight: "60px",
   },
   containerDisabled: {
     display: "flex",
@@ -74,6 +72,7 @@ const styles = {
     borderStyle: "solid",
     borderRadius: "10px",
     margin: "10px",
+    minHeight: "60px",
     opacity: "0.4",
     filter: "grayscale(100%)",
   },

@@ -7,18 +7,26 @@ import PlayerList from "./components/PlayerList";
 const App = () => {
   const [activeCivs, setActiveCivs] = useState(listOfCivs);
   return (
-    <div className="App" style={styles.container}>
-      <PlayerList activeCivs={activeCivs} />
-      <CivList
-        list={listOfCivs}
-        activeCivs={activeCivs}
-        setActiveCivs={setActiveCivs}
-      />
+    <div style={styles.upperContainer}>
+      <h1 style={styles.header}>Civilization V Randomizer</h1>
+      <div className="App" style={styles.container}>
+        <PlayerList activeCivs={activeCivs} />
+        <CivList
+          list={listOfCivs}
+          activeCivs={activeCivs}
+          setActiveCivs={setActiveCivs}
+        />
+      </div>
     </div>
   );
 };
 
 const styles = {
+  upperContainer: {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
   container: {
     display: "flex",
     flexDirection: "row",
@@ -30,6 +38,14 @@ const styles = {
     borderStyle: "solid",
     borderRadius: "10px",
     margin: "10px",
+    alignSelf: "center",
+    maxWidth: "90vw",
+  },
+  header: {
+    textAlign: "center",
+    textDecoration: "underline",
+    textDecorationLine: "solid",
+    textDecorationColor: "yellow",
   },
 };
 

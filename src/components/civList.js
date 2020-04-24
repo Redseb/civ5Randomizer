@@ -31,12 +31,23 @@ const CivList = ({ list, activeCivs, setActiveCivs }) => {
     prevTier = list[i].tier;
   }
 
-  return <div style={styles.container}>{content}</div>;
+  return (
+    <div style={styles.container}>
+      <h1 style={styles.header}>Civs</h1>
+      {content}
+    </div>
+  );
 };
 
 const styles = {
   container: {
     minWidth: "45vw",
+  },
+  header: {
+    textAlign: "center",
+    textDecoration: "underline",
+    textDecorationLine: "solid",
+    textDecorationColor: "yellow",
   },
 };
 

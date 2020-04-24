@@ -77,6 +77,7 @@ const styles = {
     borderStyle: "solid",
     borderRadius: "10px",
     margin: "10px",
+    minHeight: "60px",
   },
   subcontainer: {
     minWidth: "25%",
@@ -87,6 +88,8 @@ const styles = {
   },
   input: {
     width: "75px",
+    height: "40px",
+    fontSize: "17px",
   },
   header: {
     fontSize: "100%",
