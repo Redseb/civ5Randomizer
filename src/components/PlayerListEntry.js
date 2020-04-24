@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoMdTrash } from "react-icons/io";
+import "../App.css";
 
 const PlayerListEntry = ({
   name,
@@ -23,20 +25,40 @@ const PlayerListEntry = ({
   return (
     <div key="civ" style={styles.container}>
       <div style={styles.subcontainer}>
-        <img src={civ.icon} style={styles.icon} alt={civ.civ + " icon"} />
+        <IoMdTrash
+          className={"button"}
+          style={styles.ionicon}
+          onClick={() => {
+            setPlayers(
+              players.filter((el) => {
+                return el.index !== index;
+              })
+            );
+          }}
+        />
+        <img
+          src={civ.icon}
+          style={styles.icon}
+          alt={civ.civ + " icon"}
+          className={"button"}
+          onClick={randomizeMe}
+        />
       </div>
       <div style={styles.subcontainer}>
         <input
           type="text"
           value={nameState}
-          style={styles.header}
+          placeholder={"Name:"}
+          style={styles.input}
           onChange={(event) => {
             setNameState(event.target.value);
           }}
         />
       </div>
       <div style={styles.subcontainer} onClick={randomizeMe}>
-        <h2 style={styles.header}>{civ.civ}</h2>
+        <h2 style={styles.header} className={"button"}>
+          {civ.civ}
+        </h2>
       </div>
       <p style={styles.subText}>Tier: {civ.tier}</p>
     </div>
@@ -63,11 +85,19 @@ const styles = {
     height: "35px",
     width: "35px",
   },
+  input: {
+    width: "75px",
+  },
   header: {
     fontSize: "100%",
   },
   subText: {
     fontSize: "100%",
+  },
+  ionicon: {
+    height: "25px",
+    width: "25px",
+    marginBottom: "4px",
   },
 };
 

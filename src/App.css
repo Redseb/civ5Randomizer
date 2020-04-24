@@ -1,0 +1,23 @@
+.button:hover {
+  cursor: pointer;
+  color: rgb(63, 63, 63);
+}
+
+.button:active {
+  opacity: 0.2;
+  filter: alpha(opacity=40);
+}
+
+.utilButton:hover {
+  cursor: pointer;
+  background-color: #751818;
+}
+
+.utilButton:active {
+  opacity: 0.2;
+  filter: alpha(opacity=40);
+}
+
+.utilButton {
+  background-color: tomato;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PlayerListEntry from "./PlayerListEntry";
+import "../App.css";
 
 const PlayerList = ({ activeCivs }) => {
   const randomCiv = () => {
@@ -18,7 +19,7 @@ const PlayerList = ({ activeCivs }) => {
 
   const [players, setPlayers] = useState([
     {
-      name: "Miko",
+      name: "",
       civ: activeCivs[0],
       index: 0,
     },
@@ -45,18 +46,39 @@ const PlayerList = ({ activeCivs }) => {
       {content}
       <div
         style={styles.button}
+        className={"utilButton"}
         onClick={() => {
           setPlayers([
             ...players,
             {
-              name: "oo",
+              name: "",
               civ: activeCivs[players.length],
-              index: players.length,
+              index:
+                players.length === 0
+                  ? 0
+                  : players[players.length - 1].index + 1,
             },
           ]);
         }}
       >
         <p style={styles.buttonText}>Add</p>
+      </div>
+      <div
+        style={styles.button}
+        className={"utilButton"}
+        onClick={() => {
+          setPlayers(
+            players.map((item, index) => {
+              return {
+                name: players[index].name,
+                civ: randomCiv(),
+                index: index,
+              };
+            })
+          );
+        }}
+      >
+        <p style={styles.buttonText}>Randomize</p>
       </div>
     </div>
   );
@@ -72,10 +94,10 @@ const styles = {
     textAlign: "center",
   },
   button: {
-    borderRadius: "100%",
-    backgroundColor: "tomato",
-    width: "40px",
-    height: "40px",
+    borderRadius: "10px",
+    minWidth: "100px",
+    minheight: "40px",
+    margin: "10px",
     alignSelf: "center",
     display: "flex",
     flexDirection: "column",

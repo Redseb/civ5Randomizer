@@ -1,17 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "../App.css";
+import listOfCivs from "../civList.js";
 
-const CivListEntry = ({ civ, tier, bias, icon, setActiveCivs, activeCivs }) => {
+const CivListEntry = ({
+  civ,
+  tier,
+  bias,
+  icon,
+  active,
+  setActiveCivs,
+  activeCivs,
+  index,
+}) => {
   const [isActive, setIsActive] = useState(true);
+  useEffect(() => {
+    setIsActive(active);
+  });
+
+  console.log("active: ", active);
   return (
     <div
+      className="button"
       key="civ"
       style={isActive ? styles.container : styles.containerDisabled}
       onClick={() => {
         if (!isActive) {
-          setActiveCivs([
-            ...activeCivs,
-            { civ: civ, tier: tier, bias: bias, icon: icon },
-          ]);
+          setActiveCivs([...activeCivs, listOfCivs[index]]);
         } else {
           setActiveCivs(
             activeCivs.filter((el) => {
@@ -60,8 +74,8 @@ const styles = {
     borderStyle: "solid",
     borderRadius: "10px",
     margin: "10px",
-    opacity: "0.2",
-    filter: "alpha(opacity=40)",
+    opacity: "0.4",
+    filter: "grayscale(100%)",
   },
   subcontainer: {
     minWidth: "30%",
