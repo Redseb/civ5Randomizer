@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/civ5Randomizer/static/css/main.3da22a4b.chunk.css",
-    "main.js": "/civ5Randomizer/static/js/main.2eb008fc.chunk.js",
-    "main.js.map": "/civ5Randomizer/static/js/main.2eb008fc.chunk.js.map",
+    "main.css": "/civ5Randomizer/static/css/main.b01f307c.chunk.css",
+    "main.js": "/civ5Randomizer/static/js/main.ff488cfa.chunk.js",
+    "main.js.map": "/civ5Randomizer/static/js/main.ff488cfa.chunk.js.map",
     "runtime-main.js": "/civ5Randomizer/static/js/runtime-main.0e438489.js",
     "runtime-main.js.map": "/civ5Randomizer/static/js/runtime-main.0e438489.js.map",
     "static/js/2.315a8bca.chunk.js": "/civ5Randomizer/static/js/2.315a8bca.chunk.js",
     "static/js/2.315a8bca.chunk.js.map": "/civ5Randomizer/static/js/2.315a8bca.chunk.js.map",
     "index.html": "/civ5Randomizer/index.html",
-    "precache-manifest.39b4e8bac514cc20044deb09a41f3aba.js": "/civ5Randomizer/precache-manifest.39b4e8bac514cc20044deb09a41f3aba.js",
+    "precache-manifest.f65eca57126a7e659be3a701495fc3ed.js": "/civ5Randomizer/precache-manifest.f65eca57126a7e659be3a701495fc3ed.js",
     "service-worker.js": "/civ5Randomizer/service-worker.js",
-    "static/css/main.3da22a4b.chunk.css.map": "/civ5Randomizer/static/css/main.3da22a4b.chunk.css.map",
+    "static/css/main.b01f307c.chunk.css.map": "/civ5Randomizer/static/css/main.b01f307c.chunk.css.map",
     "static/js/2.315a8bca.chunk.js.LICENSE.txt": "/civ5Randomizer/static/js/2.315a8bca.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0e438489.js",
     "static/js/2.315a8bca.chunk.js",
-    "static/css/main.3da22a4b.chunk.css",
-    "static/js/main.2eb008fc.chunk.js"
+    "static/css/main.b01f307c.chunk.css",
+    "static/js/main.ff488cfa.chunk.js"
   ]
 }

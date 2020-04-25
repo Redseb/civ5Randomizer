@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/civ5Randomizer/precache-manifest.39b4e8bac514cc20044deb09a41f3aba.js"
+  "/civ5Randomizer/precache-manifest.f65eca57126a7e659be3a701495fc3ed.js"
 );
 
 self.addEventListener('message', (event) => {
