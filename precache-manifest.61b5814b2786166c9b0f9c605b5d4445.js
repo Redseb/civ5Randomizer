@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "faf1076652d691e7f1f56fe4e5d7a46a",
+    "revision": "b0b85aa3c36ae88ac010d2056cfa14f5",
     "url": "/civ5Randomizer/index.html"
   },
   {
-    "revision": "47b2346fad79ee0f2914",
+    "revision": "03fb5012fd1568213f6c",
     "url": "/civ5Randomizer/static/css/main.b01f307c.chunk.css"
   },
   {
-    "revision": "21f48e0119550cd14144",
-    "url": "/civ5Randomizer/static/js/2.315a8bca.chunk.js"
+    "revision": "7ba31046ada985b4e59f",
+    "url": "/civ5Randomizer/static/js/2.5531ff76.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/civ5Randomizer/static/js/2.315a8bca.chunk.js.LICENSE.txt"
+    "url": "/civ5Randomizer/static/js/2.5531ff76.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "47b2346fad79ee0f2914",
-    "url": "/civ5Randomizer/static/js/main.ff488cfa.chunk.js"
+    "revision": "03fb5012fd1568213f6c",
+    "url": "/civ5Randomizer/static/js/main.cc86769b.chunk.js"
   },
   {
     "revision": "9317f0b86a6e58e54ea9",
