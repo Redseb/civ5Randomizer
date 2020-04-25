@@ -4,9 +4,19 @@ import listOfCivs from "../civList.js";
 const CivListTierHeader = ({ tier, activeCivs, setActiveCivs }) => {
   const [isEnabling, setIsEnabling] = useState(false);
   const toggleAllTier = () => {
-    console.log(activeCivs);
+    console.log([
+      ...activeCivs,
+      ...listOfCivs.filter((item) => {
+        return item.tier === tier;
+      }),
+    ]);
     if (isEnabling) {
-      setActiveCivs(listOfCivs);
+      setActiveCivs([
+        ...activeCivs,
+        ...listOfCivs.filter((item) => {
+          return item.tier === tier;
+        }),
+      ]);
     } else {
       setActiveCivs(
         activeCivs.filter((item) => {

@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient(to top, #d1fdff 0%, #fddb92 100%);
+}
+
 * {
   font-family: "consolas";
 }
@@ -14,7 +18,7 @@
 
 .utilButton:hover {
   cursor: pointer;
-  background-color: #751818;
+  background-color: #facc68;
 }
 
 .utilButton:active {
@@ -23,5 +27,6 @@
 }
 
 .utilButton {
-  background-color: tomato;
+  background-color: #fddb92;
+  /* background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); */
 }

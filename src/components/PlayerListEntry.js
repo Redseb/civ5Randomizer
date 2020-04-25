@@ -56,11 +56,11 @@ const PlayerListEntry = ({
         />
       </div>
       <div style={styles.subcontainer} onClick={randomizeMe}>
-        <h2 style={styles.header} className={"button"}>
+        <p style={styles.header} className={"button"}>
           {civ.civ}
-        </h2>
+        </p>
+        <p style={styles.subText}>Tier: {civ.tier}</p>
       </div>
-      <p style={styles.subText}>Tier: {civ.tier}</p>
     </div>
   );
 };
@@ -78,29 +78,43 @@ const styles = {
     borderRadius: "10px",
     margin: "10px",
     minHeight: "60px",
+    backgroundColor: "#f7f7f7",
   },
   subcontainer: {
-    minWidth: "25%",
+    minWidth: "20%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   icon: {
     height: "35px",
     width: "35px",
   },
   input: {
-    width: "75px",
-    height: "40px",
+    minWidth: "50px",
+    marginRight: "20px",
+    marginLeft: "20px",
+    height: "20px",
     fontSize: "17px",
+    border: "none",
+    borderBottom: "1px solid black",
+    backgroundColor: "#f7f7f7",
   },
   header: {
     fontSize: "100%",
+    fontWeight: "bold",
+    marginLeft: "20px",
   },
   subText: {
     fontSize: "100%",
+    marginLeft: "10px",
+    marginBottom: "10px",
   },
   ionicon: {
     height: "25px",
     width: "25px",
-    marginBottom: "4px",
+    marginTop: "4px",
+    marginLeft: "10px",
   },
 };
 

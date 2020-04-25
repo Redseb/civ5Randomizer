@@ -40,6 +40,7 @@ const styles = {
     margin: "10px",
     alignSelf: "center",
     maxWidth: "90vw",
+    backgroundColor: "white",
   },
   header: {
     textAlign: "center",

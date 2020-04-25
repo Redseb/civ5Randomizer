@@ -101,6 +101,7 @@ const styles = {
     borderRadius: "10px",
     minWidth: "100px",
     minheight: "40px",
+    width: "60%",
     margin: "10px",
     alignSelf: "center",
     display: "flex",
@@ -108,9 +109,9 @@ const styles = {
     justifyContent: "center",
   },
   buttonText: {
-    fontSize: "15px",
+    fontSize: "20px",
     textAlign: "center",
-    color: "white",
+    color: "black",
   },
 };
 

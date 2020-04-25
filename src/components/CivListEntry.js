@@ -17,7 +17,6 @@ const CivListEntry = ({
     setIsActive(active);
   });
 
-  console.log("active: ", active);
   return (
     <div
       className="button"
@@ -60,6 +59,7 @@ const styles = {
     borderRadius: "10px",
     margin: "10px",
     minHeight: "60px",
+    backgroundColor: "#f7f7f7",
   },
   containerDisabled: {
     display: "flex",
